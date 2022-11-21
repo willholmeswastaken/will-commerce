@@ -17,7 +17,7 @@ const Card = ({ price }: CardProps) => {
     const addProduct = useProductStore((state) => state.add);
 
     return (
-        <div>
+        <div className='p-4 w-full sm:w-1/3'>
             <div className="relative">
                 <div className="relative w-full h-72 rounded-lg overflow-hidden">
                     <img
@@ -27,7 +27,8 @@ const Card = ({ price }: CardProps) => {
                     />
                 </div>
                 <div className="relative mt-4">
-                    <h3 className="text-sm font-medium text-gray-900">{productName}</h3>
+                    <h3 className="text-md font-medium text-gray-900">{productName}</h3>
+                    <p className='text-sm italic'>{productDescription}</p>
                 </div>
                 <div className="absolute top-0 inset-x-0 h-72 rounded-lg p-4 flex items-end justify-end overflow-hidden">
                     <div
@@ -42,7 +43,7 @@ const Card = ({ price }: CardProps) => {
             <div className="mt-6">
                 <button
                     onClick={() => addProduct(price)}
-                    className="relative w-full flex bg-gray-200 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200"
+                    className="relative w-full flex bg-indigo-600 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-white hover:bg-indigo-700 duration-300"
                 >
                     Add to bag<span className="sr-only">, {productName}</span>
                 </button>

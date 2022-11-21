@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <header className="relative bg-white">
             <nav aria-label="Top" className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div className="relative px-4 pb-14 sm:static sm:px-0 sm:pb-0">
+                <div className="relative px-4 pb-4 sm:static sm:px-0 sm:pb-0">
                     <div className="h-16 flex items-center justify-between">
                         <div className="flex-1 flex">
                             <Link href='/' className='font-semibold text-lg'>

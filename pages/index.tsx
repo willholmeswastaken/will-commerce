@@ -31,12 +31,7 @@ const Home: NextPage<HomeProps> = ({ prices }) => {
     <main className='bg-gray-100 min-h-screen'>
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <div className="flex items-center justify-between border-b">
-          <h1 className="font-semibold tracking-wide leading-10 text-start">
-            Shop Now
-          </h1>
-        </div>
-        <div className="mt-8 flex flex-row">
+        <div className="mt-8 sm:mt-8 flex flex-wrap gap-y-4 sm:gap-y-0 gap-x-0 sm:gap-x-0">
           {
             prices.map(p => (
               <Card price={p} key={p.id} />
