@@ -30,7 +30,7 @@ const Home: NextPage<HomeProps> = ({ prices }) => {
   return (
     <main className='bg-gray-100 min-h-screen'>
       <Header />
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <div className="flex items-center justify-between border-b">
           <h1 className="font-semibold tracking-wide leading-10 text-start">
             Shop Now
